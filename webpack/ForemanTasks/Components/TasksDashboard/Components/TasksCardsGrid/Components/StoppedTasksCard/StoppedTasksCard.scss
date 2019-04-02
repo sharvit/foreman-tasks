@@ -1,10 +1,10 @@
 .stopped-tasks-card {
-  table.stopped-table {
+  .stopped-table {
     width: 100%;
     border: none;
     table-layout: fixed;
 
-    &.not-focused {
+    .not-focused {
       opacity: 0.3;
     }
 
@@ -19,7 +19,8 @@
       }
     }
 
-    td, th {
+    td,
+    th {
       text-align: center;
       padding-left: 5px;
       width: 33%;
