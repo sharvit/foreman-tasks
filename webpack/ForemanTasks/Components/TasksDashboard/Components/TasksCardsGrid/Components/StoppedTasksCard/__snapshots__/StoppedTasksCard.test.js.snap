@@ -41,7 +41,7 @@ exports[`StoppedTasksCard render error-last selected 1`] = `
             Error
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
@@ -61,13 +61,13 @@ exports[`StoppedTasksCard render error-last selected 1`] = `
             Warning
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -81,13 +81,13 @@ exports[`StoppedTasksCard render error-last selected 1`] = `
             Success
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -146,7 +146,7 @@ exports[`StoppedTasksCard render error-total selected 1`] = `
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -160,13 +160,13 @@ exports[`StoppedTasksCard render error-total selected 1`] = `
             Warning
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -180,13 +180,13 @@ exports[`StoppedTasksCard render error-total selected 1`] = `
             Success
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -338,13 +338,13 @@ exports[`StoppedTasksCard render success-last selected 1`] = `
             Error
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -358,13 +358,13 @@ exports[`StoppedTasksCard render success-last selected 1`] = `
             Warning
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -378,7 +378,7 @@ exports[`StoppedTasksCard render success-last selected 1`] = `
             Success
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
@@ -437,13 +437,13 @@ exports[`StoppedTasksCard render success-total selected 1`] = `
             Error
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -457,13 +457,13 @@ exports[`StoppedTasksCard render success-total selected 1`] = `
             Warning
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -483,7 +483,7 @@ exports[`StoppedTasksCard render success-total selected 1`] = `
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -536,13 +536,13 @@ exports[`StoppedTasksCard render warning-last selected 1`] = `
             Error
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -556,7 +556,7 @@ exports[`StoppedTasksCard render warning-last selected 1`] = `
             Warning
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
@@ -576,13 +576,13 @@ exports[`StoppedTasksCard render warning-last selected 1`] = `
             Success
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -635,13 +635,13 @@ exports[`StoppedTasksCard render warning-total selected 1`] = `
             Error
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -661,7 +661,7 @@ exports[`StoppedTasksCard render warning-total selected 1`] = `
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0
@@ -675,13 +675,13 @@ exports[`StoppedTasksCard render warning-total selected 1`] = `
             Success
           </td>
           <td
-            className="total-col"
+            className="total-col not-focused"
             onClick={[Function]}
           >
             0
           </td>
           <td
-            className="last-col"
+            className="last-col not-focused"
             onClick={[Function]}
           >
             0

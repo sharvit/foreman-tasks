@@ -19,14 +19,16 @@ export const getFocusedOn = (query, wantedState, wantedTime) => {
           return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.LAST;
         case 'older':
           return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.OLDER;
+        case null:
+          return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.TOTAL;
         default:
-          break;
+          return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.NONE;
       }
     }
 
-    return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.TOTAL;
+    return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.NONE;
   }
-
+  if (query.state) return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.NONE;
   return TASKS_DONUT_CHART_FOCUSED_ON_OPTIONS.NORMAL;
 };
 

@@ -53,41 +53,48 @@ const StoppedTasksCard = ({
             </tr>
           </thead>
           <tbody>
-            {Object.entries(data).map(([result, { total, last }]) => (
-              <tr className={`${result}-row`} key={result}>
-                <td>{capitalize(result)}</td>
-                <td
-                  className={classNames('total-col', {
-                    active:
-                      query.state === STOPPED &&
-                      query.result === result &&
-                      query.mode !== LAST,
-                  })}
-                  onClick={() => updateQuery({ state: STOPPED, result })}
-                >
-                  {total}
-                </td>
-                <td
-                  className={classNames('last-col', {
-                    active:
-                      query.state === STOPPED &&
-                      query.result === result &&
-                      query.mode === LAST &&
-                      query.time === time,
-                  })}
-                  onClick={() =>
-                    updateQuery({
-                      state: STOPPED,
-                      result,
-                      mode: LAST,
-                      time,
-                    })
-                  }
-                >
-                  {last}
-                </td>
-              </tr>
-            ))}
+            {Object.entries(data).map(([result, { total, last }]) => {
+              const active = query.state === STOPPED && query.result === result;
+              const activeTotal = active && query.mode !== LAST;
+              const activeLast =
+                active && query.mode === LAST && query.time === time;
+              return (
+                <tr className={`${result}-row`} key={result}>
+                  <td>{capitalize(result)}</td>
+                  <td
+                    className={classNames('total-col', {
+                      active: activeTotal,
+                      'not-focused':
+                        query.state &&
+                        !(query.state === STOPPED && !query.result) &&
+                        !activeTotal,
+                    })}
+                    onClick={() => updateQuery({ state: STOPPED, result })}
+                  >
+                    {total}
+                  </td>
+                  <td
+                    className={classNames('last-col', {
+                      active: activeLast,
+                      'not-focused':
+                        query.state &&
+                        !(query.state === STOPPED && !query.result) &&
+                        !activeLast,
+                    })}
+                    onClick={() =>
+                      updateQuery({
+                        state: STOPPED,
+                        result,
+                        mode: LAST,
+                        time,
+                      })
+                    }
+                  >
+                    {last}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </Card.Body>

@@ -152,7 +152,7 @@ exports[`TasksDonutCard render with total selected 1`] = `
   aggregated={false}
   aggregatedMini={false}
   cardRef={null}
-  className="tasks-donut-card selected-tasks-card"
+  className="tasks-donut-card"
   matchHeight={false}
 >
   <CardTitle
@@ -170,7 +170,7 @@ exports[`TasksDonutCard render with total selected 1`] = `
           "#0089C9",
         ]
       }
-      focusedOn="total"
+      focusedOn="none"
       last={0}
       older={0}
       onLastClick={[Function]}
