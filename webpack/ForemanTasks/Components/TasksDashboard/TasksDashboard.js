@@ -14,7 +14,7 @@ import './TasksDashboard.scss';
 class TasksDashboard extends React.Component {
   componentDidMount() {
     const query = getQueryFromUrl();
-
+    this.props.getTasksSummary();
     this.props.initializeDashboard({
       time: query.time,
       query,
@@ -22,7 +22,7 @@ class TasksDashboard extends React.Component {
   }
 
   render() {
-    const { time, query, data, updateTime, updateQuery } = this.props;
+    const { time, query, tasksSummary, updateTime, updateQuery } = this.props;
 
     return (
       <Grid fluid className="tasks-dashboard-grid">
@@ -30,7 +30,7 @@ class TasksDashboard extends React.Component {
         <TasksCardsGrid
           time={time}
           query={query}
-          data={data}
+          data={tasksSummary}
           updateQuery={updateQuery}
         />
         <TasksLabelsRow query={query} updateQuery={updateQuery} />
@@ -42,19 +42,21 @@ class TasksDashboard extends React.Component {
 TasksDashboard.propTypes = {
   time: timePropType,
   query: queryPropType,
-  data: TasksCardsGrid.propTypes.data,
   initializeDashboard: PropTypes.func,
   updateTime: PropTypes.func,
   updateQuery: PropTypes.func,
+  getTasksSummary: PropTypes.func,
+  tasksSummary: TasksCardsGrid.propTypes.data,
 };
 
 TasksDashboard.defaultProps = {
   time: TASKS_DASHBOARD_AVAILABLE_TIMES.H24,
   query: {},
-  data: TasksCardsGrid.defaultProps.data,
   initializeDashboard: () => null,
   updateTime: () => null,
   updateQuery: () => null,
+  getTasksSummary: () => null,
+  tasksSummary: TasksCardsGrid.defaultProps.data,
 };
 
 export default TasksDashboard;

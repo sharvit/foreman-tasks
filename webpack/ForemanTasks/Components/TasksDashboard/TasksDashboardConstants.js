@@ -65,3 +65,43 @@ export const MOCKED_DATA = {
   },
   scheduled: 1,
 };
+
+export const TASKS_SUMMARY_REQUEST = 'TASKS_SUMMARY_REQUEST';
+export const TASKS_SUMMARY_SUCCESS = 'TASKS_SUMMARY_SUCCESS';
+export const TASKS_SUMMARY_FAILURE = 'TASKS_SUMMARY_FAILURE';
+
+export const TASKS_SUMMARY_ZERO = {
+  running: {
+    recent: 0,
+    total: 0,
+  },
+  paused: {
+    recent: 0,
+    total: 0,
+  },
+  stopped: {
+    by_result: {
+      error: {
+        total: 0,
+        recent: 0,
+      },
+      warning: {
+        total: 0,
+        recent: 0,
+      },
+      success: {
+        total: 0,
+        recent: 0,
+      },
+    },
+  },
+  scheduled: {
+    total: 0,
+  },
+};
+
+export const STATUS = {
+  PENDING: 'PENDING',
+  RESOLVED: 'RESOLVED',
+  ERROR: 'ERROR',
+};
